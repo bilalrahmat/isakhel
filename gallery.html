@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="gallery.css" rel="stylesheet" />
+    <title>Esakhel gallery</title>
+</head>
+<body>
+    <header>
+        <nav>
+            
+
+            <label class="logo">ESAKHEL</label>
+             <button type="button" class="nav-toggle" id="navtoggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="navbar" id="navLinks" >
+               <li><a href="index.html">Home</a></li>
+               <li><a href="index.html">About</a></li>
+               <li><a href="Community.html">Our Community</a></li>
+               <li><a class="active" href="gallery.html">Our Gallery</a></li>
+               <li><a href="#history">History</a></li>
+               </div>
+        
+    </header>
+    
+        <section class="Community-hero">
+            <div class="container">
+            <h1 >Esakhel Gatherings & Events</h1>
+            <P>Browse photo albums and video recordings from our local function, jirgas, and celebrations</P>
+            </div>
+            <div class="filter-buttons">
+               <button class="filter-btn active" onclick="filterGalleryCategory('all', this)" >All Gatherings</button>
+               <button class="filter-btn" onclick="filterGalleryCategory('jirga', this)"> Jirgas & Councils </button>
+               <button class="filter-btn" onclick="filterGalleryCategory('cultural', this)">Cultural  & Festivals</button>
+               <button class="filter-btn" onclick="filterGalleryCategory('youth', this)">Youth union Meetups</button>
+               </div>
+        </section>
+        <section class="directory-section">
+            <article class="category-group" data-category="jirga">
+            <h2 class="category-title">Esakhel Grand Elders Council(Jirga)</h2>
+            <figure class="member-card event-album-card">
+                <figcaption>
+                    <h3>Annual Tribe Elders & Public Consulation Council</h3>
+                    <span class="badge social-badge">Jirga & Council</span>
+                    <P class="bio">Venue: barhampatti | Organized by: Ali Asghar Khan</P>
+                    <P class="description">Snapshots of local elders, community Leaders, and residents gathering to discuss our unity</P>
+                 <div class="slider-container" data-index="0">
+                    <div class="slider-track">
+                        <img src="event/B1.jpg"class="slide-img"  alt="group Picture">
+                        <img src="event/B3.jpg"class="slide-img"  alt="group Picture">
+                        <img src="event/B2.jpg"class="slide-img"  alt="group Picture">
+                        <img src="event/B4.jpg"class="slide-img"  alt="group Picture">
+                    </div>
+                    <button class="slider-btn prev-btn" onclick="moveSlide(this,-1)">&#10094;</button>
+                     <button class="slider-btn next-btn" onclick="moveSlide(this,1)">&#10095;</button>
+                  </div>
+                  <div class="thumbnail-strip">
+                    <img src="event/B1.jpg" class="thumb active" onclick="jumpToSlide(this, 0)" >
+                       <img src="event/B3.jpg" class="thumb active" onclick="jumpToSlide(this, 1)" >
+                      <img src="event/B2.jpg" class="thumb active" onclick="jumpToSlide(this, 2)" >
+                         <img src="event/B4.jpg" class="thumb active" onclick="jumpToSlide(this, 3)" >
+                  </div>
+                </figcaption>
+            </figure>
+            </article>
+             <article class="category-group" data-category="youth">
+            <h2 class="category-title">Esakhel Youth Association Meetup</h2>
+            <figure class="member-card event-album-card">
+                <figcaption>
+                    <h3>Our Esakhel Family invited as chief Guste for Final Match</h3>
+                    <span class="badge engineering-badge">Youth Gatherings</span>
+                    <P class="bio">Venue: Govt high School Baghdheri Swat</P>
+                    <P class="description">Highlights from our youth assemble focused on eduction ,student network, and local development. </P>
+                 <div class="slider-container">
+                    <div class="slider-track" data-index="0">
+                        <img src="event/c1.jpg" class="slide-img" alt="ground Picture">
+                        <img src="event/c3.jpg"class="slide-img"  alt="ground Picture">
+                        <img src="event/c2.jpg"class="slide-img"  alt="ground Picture">
+                        <img src="event/c4.jpg"class="slide-img"  alt="group Picture">
+                        <img src="event/c5.jpg"class="slide-img"  alt="group Picture">
+                    </div>
+                    <button class="slider-btn prev-btn" onclick="moveSlide(this,-1)">&#10094;</button>
+                     <button class="slider-btn next-btn" onclick="moveSlide(this,1)">&#10095;</button>
+                  </div>
+                   <div class="thumbnail-strip">
+                    <img src="event/c1.jpg" class="thumb active" onclick="jumpToSlide(this, 0)" >
+                       <img src="event/c3.jpg" class="thumb active" onclick="jumpToSlide(this, 1)" >
+                      <img src="event/c2.jpg" class="thumb active" onclick="jumpToSlide(this, 2)" >
+                         <img src="event/c4.jpg" class="thumb active" onclick="jumpToSlide(this, 3)" >
+                         <img src="event/c5.jpg" class="thumb active" onclick="jumpToSlide(this, 4)" >
+                  </div>
+                </figcaption>
+            </figure>
+            </article>
+             <article class="category-group" data-category="cultural">
+            <h2 class="category-title">Monthly Cultural Event</h2>
+            <figure class="member-card event-album-card">
+                <figcaption>
+                    <h3>Traditional Esakhel Heritage & celebrations</h3>
+                    <span class="badge medical-badge">Cultural Events</span>
+                    <P class="bio">Venue:Fathepur | Organized by: Hassan Khan </P>
+                    <P class="description">Celbrate tradition,diversity and community unity 
+                        through art and unforgettable cultural experience. </P>
+                 <div class="slider-container">
+                    <div class="slider-track" data-index="0">
+                        <img src="event/d1.jpg"class="slide-img"  alt="ground Picture">
+                        <img src="event/d2.jpg"class="slide-img"  alt="ground Picture">
+                        <img src="event/d3.jpg"class="slide-img"  alt="ground Picture">
+                        <img src="event/d4.jpg"class="slide-img"  alt="group Picture">
+                    </div>
+                    <button class="slider-btn prev-btn" onclick="moveSlide(this,-1)">&#10094;</button>
+                     <button class="slider-btn next-btn" onclick="moveSlide(this,1)">&#10095;</button>
+                  </div>
+                  <div class="thumbnail-strip">
+                    <img src="event/d1.jpg" class="thumb active" onclick="jumpToSlide(this, 0)" >
+                       <img src="event/d2.jpg" class="thumb active" onclick="jumpToSlide(this, 1)" >
+                      <img src="event/d3.jpg class="thumb active" onclick="jumpToSlide(this, 2)" >
+                         <img src="event/d4.jpg" class="thumb active" onclick="jumpToSlide(this, 3)" >
+                  </div>
+                </figcaption>
+            </figure>
+            </article>
+        </section> 
+    
+
+
+  <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">ESAKHEL PORTAL</h3>
+                <P class="footer-desc">
+                    Connecting members, preserving history, and serving our Community globally.
+                </P>
+                <div class="footer-contact-info">
+                    <p>Main Office, Esakhel,tehsil</p>
+                    <P>Call: 03419690945</P>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="Community.html">Our Community</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a class="active" href="#gallery">Our Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <P>&copy; 2026 Esakhel Community portal.All Rights Reserved.</P>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

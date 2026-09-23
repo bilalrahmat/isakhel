@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="community.css" rel="stylesheet"/>
+    <title>Esakhel Portal</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="gogo">
+            <a href="index.html" class="logo">ESAKHEL PORTAL</a>
+            <button class="nav-toggle" id="navtoggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="Community.html" class="active">Community Members</a></li>
+                <li><a href="gallery.html">Our Gallery</a></li>
+                <li><a href="index.html#history">History</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="community-hero">
+        <div class="container">
+            <h1>Community-Directory</h1>
+            <p>Connect with members, Professionals, across Esakhel.</p>
+            <div class="search-box">
+                <input type="text" id="memberSearch" placeholder="Serach by name,Profesion" onkeyup="filterDirectory()">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterCategory('all',this)">All</button>
+                <button class="filter-btn" onclick="filterCategory('medical',this)">Medical</button>
+                <button class="filter-btn" onclick="filterCategory('engineering',this)">Engineers</button>
+                <button class="filter-btn" onclick="filterCategory('social',this)">Social Workers</button>
+                <button class="filter-btn" onclick="filterCategory('political',this)">Political</button>
+            </div>
+        </div>
+    </section>
+    <section class="directory-section">
+        <article class="category-group" id="medical-section">
+            <h2 class="category-title">Medical Professionals</h2>
+            <div class="directory-grid">
+            <figure class="member-card" data-category="medical">
+                <img src="img/Drsami.jpg" alt="Dr.samiUllah Khan" class="profile-img">
+                <figcaption>
+                    <h3>Dr.samiUllah Khan</h3>
+                    <span class="badge medical-badge">Medical Specialist</span>
+                    <p class="bio">Providing primary healthcare,clinical diagnostics, and medicalconsulting</p>
+                    <p class="description">Dedicated over 8 years to improving public 
+                          infrastructure.Organizes free weekend camps </p>
+                    <address>
+                        <p>Tehsil Headquarter Hospital, Esakhel</p>
+                        <P> dr.sami@gmail.com</P>
+                    </address>
+                </figcaption>
+            </figure>
+            </div>
+        </article>
+          <article class="category-group" id="medical-section">
+            <h2 class="category-title">Medical Professionals</h2>
+            <div class="directory-grid">
+            <figure class="member-card" data-category="medical">
+                <img src="img/drinam.jpg" alt="Dr.InamUllahKhan" class="profile-img">
+                <figcaption>
+                    <h3>Dr.InamUllah Khan</h3>
+                    <span class="badge medical-badge">Medical Specialist</span>
+                    <p class="bio">Providing primary healthcare,clinical diagnostics, and medicalconsulting</p>
+                    <p class="description">Dedicated over 8 years to improving public 
+                          infrastructure.Organizes free weekend camps </p>
+                    <address>
+                        <p>Tehsil Headquarter Hospital, Esakhel</p>
+                        <P> dr.inam@gmail.com</P>
+                    </address>
+                </figcaption>
+            </figure>
+            </div>
+        </article>
+          <article class="category-group" id="medical-section">
+            <h2 class="category-title">Medical Professionals</h2>
+            <div class="directory-grid">
+            <figure class="member-card" data-category="medical">
+                <img src="img/zoib.png" alt="Dr.Zohaib Khan" class="profile-img">
+                <figcaption>
+                    <h3>Dr.Zohaib Khan</h3>
+                    <span class="badge medical-badge">Medical Specialist</span>
+                    <p class="bio">Providing primary healthcare,clinical diagnostics, and medicalconsulting</p>
+                    <p class="description">Dedicated over 8 years to improving public 
+                          infrastructure.Organizes free weekend camps </p>
+                    <address>
+                        <p>Tehsil Headquarter Hospital, Esakhel</p>
+                        <P> dr.zohaib@gmail.com</P>
+                    </address>
+                </figcaption>
+            </figure>
+            </div>
+        </article>
+          <article class="category-group" id="medical-section">
+            <h2 class="category-title">Medical Professionals</h2>
+            <div class="directory-grid">
+            <figure class="member-card" data-category="medical">
+                <img src="img/adan.jpg" alt="Dr.Adnan Khan" class="profile-img">
+                <figcaption>
+                    <h3>Dr.Adnan Khan</h3>
+                    <span class="badge medical-badge">Medical Specialist</span>
+                    <p class="bio">Providing primary healthcare,clinical diagnostics, and medicalconsulting</p>
+                    <p class="description">Dedicated over 8 years to improving public 
+                          infrastructure.Organizes free weekend camps </p>
+                    <address>
+                        <p>Tehsil Headquarter Hospital, Esakhel</p>
+                        <P> dr.adnan@gmail.com</P>
+                    </address>
+                </figcaption>
+            </figure>
+            </div>
+        </article>
+         <article class="category-group" id="engineering-section">
+            <h2 class="category-title">Engineers & IT</h2>
+             <div class="directory-grid">
+            <figure class="member-card" data-category="engineering">
+                <img src="img/bilal.png" alt="Bilal Khan" class="profile-img">
+                <figcaption>
+                    <h3>Bilal Khan</h3>
+                    <span class="badge engineering-badge">Software Engineer</span>
+                    <p class="bio">Specializing in modern web development,UI design, and custom software solutions.</p>
+                    <p class="description"> Pasionate about digitizing loacl services. Conduct free programming bootcamps </p>
+                    <address>
+                        <p>Tehsil Bazaar,</p>
+                        <P> bilal@gmail.com</P>
+                    </address>
+                </figcaption>
+            </figure>
+            </div>
+        </article>
+         <article class="category-group" id="social-section">
+            <h2 class="category-title"> Social Workers & Community Leaders</h2>
+            <div class="directory-grid">
+            <figure class="member-card" data-category="social">
+                <img src="img/p hassain.jpg" alt="Hassankhan" class="profile-img">
+                <figcaption>
+                    <h3> Hassan Khan</h3>
+                    <span class="badge social-badge">Youth Welfare Activiste</span>
+                    <p class="bio">Managing community Welfare drives, youth eduction, and local relief programs</p>
+                    <p class="description">Leads non-profit youth initiatives.Coordinates local blood donation drives and relief networks</P>
+                    <address>
+                        <p>Baghdheri swat, Esakhel</p>
+                        <P> hassan@gmail.com</P>
+                    </address>
+                </figcaption>
+            </figure>
+            </div>
+        </article>
+         <article class="category-group" id="political-section">
+            <h2 class="category-title">Public Represntatives</h2>
+            <div class="directory-grid">
+            <figure class="member-card" data-category="political">
+                <img src="img/akbarshah.jpg" alt="AkbarShah Khan" class="profile-img">
+                <figcaption>
+                    <h3>AkbarShah Khan</h3>
+                    <span class="badge political-badge">Village Chariman</span>
+                    <p class="bio">Working on civic infrastructure,municipal development, and public advocacy.</p>
+                    <p class="description">Focusing on upgrading roads, clean drinking water filtration plants, and local sanitation facilities</p>
+                    <address>
+                        <p>Chickra swat, Esakhel</p>
+                        <P> akbarshah@gmail.com</P>
+                    </address>
+                </figcaption>
+            </figure>
+            </div>
+        </article>
+         <article class="category-group" id="political-section">
+            <h2 class="category-title">Public Represntatives</h2>
+            <div class="directory-grid">
+            <figure class="member-card" data-category="political">
+                <img src="img/ilyaskhan.jpg" alt="ilyas Khan" class="profile-img">
+                <figcaption>
+                    <h3>Ilyas Khan</h3>
+                    <span class="badge political-badge">Village Representative </span>
+                    <p class="bio">Working on civic infrastructure,municipal development, and public advocacy.</p>
+                    <p class="description">Focusing on upgrading roads, clean drinking water filtration plants, and local sanitation facilities</p>
+                    <address>
+                        <p>shan swat, Esakhel</p>
+                        <P> ilyas@gmail.com</P>
+                    </address>
+                </figcaption>
+            </figure>
+            </div>
+        </article>
+            <article class="category-group" id="political-section">
+            <h2 class="category-title">Public Represntatives</h2>
+            <div class="directory-grid">
+            <figure class="member-card" data-category="political">
+                <img src="img/ahmad.jpg" alt="Ahmad khan" class="profile-img">
+                <figcaption>
+                    <h3>Muhammad AhmadKhan</h3>
+                    <span class="badge political-badge">Village Representative </span>
+                    <p class="bio">Working on civic infrastructure,municipal development, and public advocacy.</p>
+                    <p class="description">Focusing on upgrading roads, clean drinking water filtration plants, and local sanitation facilities</p>
+                    <address>
+                        <p>Baghdheri swat, Esakhel</p>
+                        <P> ahmad@gmail.com</P>
+                    </address>
+                </figcaption>
+            </figure>
+            </div>
+        </article>
+    </section>
+      <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">ESAKHEL PORTAL</h3>
+                <P class="footer-desc">
+                    Connecting members, preserving history, and serving our Community globally.
+                </P>
+                <div class="footer-contact-info">
+                    <p>Main Office, Esakhel,tehsil</p>
+                    <P>Call: 03419690945</P>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="#Community">Our Community</a></li>
+                    <li><a href="gallery.html">Our Gallery</a></li>
+                    <li><a href="#history">History</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <P>&copy; 2026 Esakhel Community portal.All Rights Reserved.</P>
+        </div>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+</body>/
+</html>
